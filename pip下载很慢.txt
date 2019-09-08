@@ -1,0 +1,19 @@
+解决方式： 更改pip的数据源。目前国内比较知名的有豆瓣的，清华的。都是pipy官网的镜像。
+  豆瓣：http://pypi.douban.com/simple/
+  清华：https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+安装命名为 pip install -i 网址 所需要安装的库名
+例如：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple requests   
+就是利用清华的镜像源，下载安装requests库。其他类似
+
+
+除此之外，还可以通过设置配置文件永久更改pip数据源
+windows下，直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini，内容如下
+
+
+ [global]
+ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+————————————————
+版权声明：本文为CSDN博主「Amos_x」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_41004350/article/details/78780527

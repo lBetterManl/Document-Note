@@ -1,0 +1,11 @@
+ 接着让 jupyter notebook 实现自动代码补全，首先安装 nbextensions
+
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+然后安装 nbextensions_configurator
+
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+如果提示缺少依赖，就使用pip安装对应依赖即可。
+
+最后重启jupyter，在弹出的主页面里，能看到增加了一个Nbextensions标签页，在这个页面里，勾选Hinterland即启用了代码自动补全，如图所示：
